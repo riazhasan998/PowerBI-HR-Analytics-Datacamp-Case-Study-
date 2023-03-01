@@ -1,3 +1,5 @@
+![PB IMage](https://user-images.githubusercontent.com/121925698/222112519-5bf0ae1c-1fe7-41e8-9c7d-f3f62804a4c7.png)
+
 ## Summary of case study
 This case study is to apply skills developed through the Power BI course offered by Data Camp using a real-world problem. This is the second project assignment.
 
