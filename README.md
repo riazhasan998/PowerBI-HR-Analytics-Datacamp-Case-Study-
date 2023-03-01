@@ -27,7 +27,7 @@ For this case study, we will use the Kimball modelling approach as we model our 
 
 The Fact table stores the information about employee yearly reviews. We will also be working with multiple dimension tables to provide more context to the data we are working with. The final data model will follow a snowflake schema below.
 
-The first step we will take is to open an empty PowerBI file and load and prepare our [dataset](https://assets.datacamp.com/production/repositories/6064/datasets/e2f7bf7250e8c73f79deffeed749aa1d08cd2591/Case%20Study_%20HR%20Analytics%20in%20Power%20BI%20-%20Exercises%20and%20Datasets.pdf) . We will import all the CSV files and load them into PowerBI. Ensure that the data is clean. You may refer to this [article[(https://dev.to/datawired22/data-analysis-flow-in-5-steps-using-powerbi-jm1) on the expectations of clean data. Ensure you add either Fact OR Dim at the beginning of each table name, depending on the type of table it is.
+The first step we will take is to open an empty PowerBI file and load and prepare our [dataset](https://assets.datacamp.com/production/repositories/6064/datasets/e2f7bf7250e8c73f79deffeed749aa1d08cd2591/Case%20Study_%20HR%20Analytics%20in%20Power%20BI%20-%20Exercises%20and%20Datasets.pdf) . We will import all the CSV files and load them into PowerBI. Ensure that the data is clean. You may refer to this [article](https://dev.to/datawired22/data-analysis-flow-in-5-steps-using-powerbi-jm1) on the expectations of clean data. Ensure you add either Fact OR Dim at the beginning of each table name, depending on the type of table it is.
 
 ## Building the data model: Date dimension and relating tables
 
@@ -143,8 +143,10 @@ Next, we will create a measure, AverageSalary inside the measure table. This wor
 
 ```
 AverageSalary = AVERAGE(DimEmployee[Salary])
-Below is a visualization of employees by their average salary and ethnicity.
 ```
+Below is a visualization of employees by their average salary and ethnicity. 
+
+![Employee by salary and race](https://user-images.githubusercontent.com/121925698/222112285-d73f9024-d02e-4f90-88e6-0c649932a108.jpg)
 
 
 ## Performance Tracker 1:
@@ -153,10 +155,13 @@ The HR Team would like to track the performance of the employees based on yearly
 
 We will add a slicer with employee full name which has single select and search enabled. We will go on to add a card which shows selected employee start date, last review date and next review date
 
+![Employee dates](https://user-images.githubusercontent.com/121925698/222112185-eab306a7-f3a3-480f-9909-0ce5d0476bc5.jpg)
+
+
 
 ## Performance Tracker 2
 
-Next we would like to take a closer look at individual review ratings. We will create satisfaction metrics inside the _Measures table and visualise them.
+Next we would like to take a closer look at individual review ratings. We will create satisfaction metrics inside the _Measures_ table and visualise them.
 
 
 ```
@@ -201,7 +206,7 @@ Here is the Overview Dashboard.
 ![Overview Dashboard](https://user-images.githubusercontent.com/121925698/222110544-501675dd-f264-4889-8df9-660cb76d5070.jpg)
 
 
-Here is the final report delivered.
+The final report delivered is available as a PowerBI file in this repository.
 
 Thank you for reading
 
