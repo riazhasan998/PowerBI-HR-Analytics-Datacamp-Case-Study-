@@ -212,8 +212,7 @@ The final report delivered is available as a PowerBI file in this repository.
 
 Thank you for reading
 
-**Author: Gcinithemba Sherilyn Maphosa**
+**Author: Md Riaz Hasan**
 
-_Data Wired_
 
 
